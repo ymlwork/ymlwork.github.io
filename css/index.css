@@ -1,0 +1,111 @@
+#banner .box{
+	width: 100%;
+	height: 460px;
+}
+.the_prev{
+	position: absolute;
+	left: 250px;
+    top: 230px;
+}
+.the_prev,.the_next{
+	color: #999;
+}
+ .swiper-container-horizontal .the_xiaoyuandian{
+	left: 530px;
+	bottom: 20px;
+}
+.bn_butt{
+	margin-top: 15px;
+	width: 100%;
+	height: 170px;
+	margin-bottom: 30px;
+}
+.bn_butt .bn_butt_li01{ 
+	width: 234px;
+	height: 170px;
+	float: left;
+	background: rgb(95,87,80);
+}
+.bn_butt .bn_butt_li01 a{
+	display: inline-block;
+	position: relative;
+	width: 75px;
+	height: 64px;
+	text-align: center;
+	color: rgba(255,255,255,0.6);
+	padding-top: 20px;
+}
+.bn_butt .bn_butt_li01 a:hover{
+	color: rgba(255,255,255,1);
+}
+.bn_butt .bn_butt_li01 a img{
+	width: 24px;
+	margin-bottom: 5px;
+}
+.borderxx::before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 1px;	
+	width: 1px;
+	height: 70px;
+	background: rgba(255,255,255,0.1);
+}
+.borderyy::after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 8px;	
+	width: 65px;
+	height: 1px;
+	background: rgba(255,255,255,0.1);
+}
+.bn_butt .bn_butt_li{
+	margin-left: 15px;
+	width: 315px;
+	height: 170px;
+	float: left;
+	overflow: hidden;
+}
+#main{
+	background: rgb(245,245,245);
+}
+.xiaomishangou h3{
+	line-height: 60px;
+}
+.xiaomishangou h3 span{
+	font-size: 20px;
+}
+.xiaomishangou .daojishi{
+	width: 234px;
+	height: 304px;
+	border-top:1px solid rgb(229,57,53);
+	background: rgb(241,237,237);
+	text-align: center;
+	padding-top: 35px;
+}
+.xiaomishangou .daojishi p{
+	line-height: 80px;
+	font-size: 24px;
+	color: rgb(229,57,53);
+}
+.xiaomishangou .daojishi .zhuangtai{
+	line-height: 80px;
+	color: #444444;
+	font-size: 16px;
+}
+.xiaomishangou .daojishi .shijian span{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: rgb(96,87,81);
+	font-size: 18px;
+	color: #fff;
+	line-height: 50px;	
+}
+.xiaomishangou .daojishi .shijian i{
+	font-size: 30px;
+	color: #444;
+}

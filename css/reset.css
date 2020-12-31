@@ -1,0 +1,56 @@
+/* css reset  css重置 */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+/* 设置全局默认字号和字体 */
+body{
+    font: 12px "微软雅黑",Arial;
+    width: 100%;
+    height: 100%;
+}
+/* 取消默认加粗样式 */
+h1,h2,h3,h4,h5,h6,b,strong{
+    font-weight: normal;
+    font-size: 100%;
+}
+/* 取消默认倾斜样式 */
+i,em{
+    font-style: normal;
+}
+/* 取消默认下划线 */
+a{
+    color: #777;
+    text-decoration: none;
+}
+/* 取消列表项目符号 */
+li{
+    list-style: none;
+}
+/* 取消input选中后的高亮框 */
+input{
+    outline: none;
+}
+/* 帮助解决图片被嵌套后的3~6像素bug */
+img{
+    vertical-align: middle;
+}
+/* 万能清除浮动法 */
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+/* 清除文本域样式 */
+textarea{
+    outline: none;
+    resize: none;
+    border: none;
+}
+
