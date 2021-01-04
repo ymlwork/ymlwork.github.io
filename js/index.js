@@ -93,3 +93,44 @@ function splist() {
 	var timer2 = setInterval(fn, 5000);
 }
 splist()
+
+//用ajax请求数据渲染家电
+function ajaxGet(a) {
+	$('.jd_splist').html('');
+	$.ajax({
+		url: '../json/jiadian_' + a + '.json',
+		dataType: 'json',
+		success: function (data) {
+			data.map(function (item, index) {
+				if (index == 7) {
+					$('.jd_splist').append(`<li class="li8 jd_lastli jd_li8">
+							<div class="lastli_box1 yinying">
+								<p class="jd_p8">${item.p}</p><span class="jd_span18">${item.sp}</span><img src="${item.img}" alt="">
+							</div>
+							<div class="lastli_box2 yinying">
+								<p>浏览更多</p><span class="jd_span19">${item.span}</span><img src="../images/右箭头.png" alt="">
+							</div>
+						</li>`)
+				} else {
+					$('.jd_splist').append(`<li class="li${index + 1} yinying jd_li${index + 1}"><img src="${item.img}" alt="">
+							<h3 class="jd_h3${index + 1}">${item.h3}</h3>
+							<p class="jd_p1">${item.p}</p>
+							<div><span class="sp01 js_span04">${item.sp01}</span><span class="sp02 js_span05">${item.sp02}</span></div>
+							<a href="#"></a>
+						</li>`)
+				}
+			})
+		}
+	})
+}
+ajaxGet('hot');
+$('.jd_span02').on('mouseenter', function () {
+	$('.jd_span03').removeClass('bianse').addClass('bubianse');
+	$('.jd_span02').removeClass('bubianse').addClass('bianse');
+	ajaxGet('tv')
+})
+$('.jd_span03').on('mouseenter', function () {
+	$('.jd_span03').removeClass('bubianse').addClass('bianse');
+	$('.jd_span02').removeClass('bianse').addClass('bubianse');
+	ajaxGet('hot');
+})

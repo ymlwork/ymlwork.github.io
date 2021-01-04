@@ -300,9 +300,13 @@
 .jiadian h3 .span02{
 	margin: 18px 0 0 0;
 }
-.jiadian h3 .span02:hover,.jiadian h3 .span03:hover{
+.jiadian h3 .bianse{
 	color: rgb(250,101,9);
 	border-bottom: 2px solid rgb(250,101,9);
+}
+.jiadian h3 .bubianse{
+	color: #000;
+	border-bottom: none;
 }
 .jiadian .jd_lf{
 	width: 234px;
@@ -398,8 +402,4 @@
 }
 .zhineng h3 .span02{
 	margin: 18px 0 0 0;
-}
-.zhineng h3 .span02:hover,.zhineng h3 .span03:hover,.zhineng h3 .span04:hover{
-	color: rgb(250,101,9);
-	border-bottom: 2px solid rgb(250,101,9);
 }
