@@ -1,0 +1,189 @@
+#header{
+	height: 100px;
+	background: #fff;
+}
+.container{
+	width: 1226px;
+	margin: 0 auto;
+}
+.header>a{
+	display: block;
+	overflow: hidden;
+	width: 270px;
+}
+.header i{
+	display: block;
+	float: left;
+	margin-top: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 2px;
+	font-size: 30px;
+	background-color: rgb(245,102,0);
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	margin-right: 25px;
+}
+.header div{
+	width: 190px;
+	float: left;
+}
+.header div>h1{
+	font-size: 30px;
+	color: #000;
+	line-height: 46px;
+	font-weight: 500;
+	margin-top: 15px;
+}
+.header div>p{
+	font-size: 10px;
+}
+#main{
+	width: 100%;
+	overflow: hidden;
+}
+.main_inner{
+	height: 588px;
+	position: relative;
+}
+.main_inner img{
+	position: absolute;
+	top: 0;
+	left: -667px;
+	z-index: 1;
+}
+.main_inner .login{
+	width: 410px;
+	height: 553px;
+	position: absolute;
+	z-index: 9;
+	background: #fff;
+	top: 35px;
+	right: 35px;
+}
+.main_inner .login .fangshi{
+	width: 100%;
+	height: 80px;
+	position: relative;
+}
+.main_inner .login .fangshi>span{
+	display: block;
+	float: left;
+	font-size: 24px;
+	color: #444;
+	text-align: center;
+	width: 205px;
+	line-height: 80px;
+}
+.main_inner .login .fangshi>span:hover{
+	color: rgb(245,102,0);
+}
+.main_inner .login .fangshi>.bianse{
+	color: rgb(245,102,0);
+}
+.fenge::before{
+	content: '';
+	display: block;
+	width: 2px;
+	height: 30px;
+	background:rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 27px;
+}
+.main_inner .login form{
+	text-align: center;
+}
+.main_inner .login input{
+	width: 348px;
+	height: 48px;
+	border: 1px solid rgb(224,224,224);
+	text-indent: 10px;
+	color: #000;
+}
+.main_inner .login input::placeholder{
+	color: #999;
+}
+.main_inner .login .un{
+	margin-bottom: 14px;
+}
+.main_inner .login .hint{
+	height: 25px;
+}
+.main_inner .login .bt{
+	color: #fff;
+	background: rgb(245,102,0);
+	text-align: center;
+	line-height: 48px;
+	font-size: 14px;
+	border: 2px solid  rgb(245,102,0);
+}
+.main_inner .login .duanxin{
+	text-align: center;
+	line-height: 40px;
+}
+.main_inner .login .duanxin>a{
+	color: rgb(245,102,0);
+	font-size: 14px;
+}
+.main_inner .login .zhuce{
+	color: #999;
+	line-height: 70px;
+	text-align: center;
+}
+.main_inner .login .zhuce>a{
+	font-size: 14px;
+	color: #999;
+}
+.main_inner .login .zhuce>a:hover{
+	color: rgb(245,102,0);
+}
+.main_inner .login .tubiao{
+	position: absolute;
+	bottom: 30px;
+}
+.main_inner .login .tubiao>a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 30px;
+	text-align: center;
+}
+.main_inner .login .tubiao>.a01{
+	font-size: 20px;
+	color: #fff;
+	background: rgb(211,47,47);
+	margin-left: 160px;
+}
+.main_inner .login .tubiao>.a02{
+	font-size: 20px;
+	color: #fff;
+	background: rgb(0,170,238);
+	margin-left: 35px;
+}
+
+#footer{
+	height: 179px;
+	background: #fff;
+	border-top: 1px solid #fff;
+}
+#footer p{
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	color: #888;
+}
+#footer p a{
+	font-size: 14px;
+	color: #888;
+}
+#footer p .bianse{
+	color: #111;
+}
+#footer .p01{
+	margin-top: 100px;
+}
+#footer .p01 a:hover{
+	color: #111;
+}

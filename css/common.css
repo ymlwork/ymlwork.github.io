@@ -304,6 +304,9 @@
 	
 }
 /* 尾部开始 */
+.footer_nav{
+	background: #fff;
+}
 .ft_nav .ft_nav_top ul{
 	height: 54px;
 	padding-top: 26px;
