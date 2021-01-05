@@ -31,7 +31,7 @@ var mySwiper = new Swiper('.swiper-container', {
 
 //小米闪购秒杀倒计时
 function daojishi() {
-	var date2 = new Date('2021-1-4 23:54:00');
+	var date2 = new Date('2021-1-10 23:59:59');
 	function fn() {
 		var date1 = Date.now();
 		var date = parseInt(Math.abs(date1 - date2) / 1000);

@@ -70,7 +70,22 @@
   line-height: 30px;
   color: #666;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 12px;
+}
+
+.rejister form .hint1 {
+  line-height: 30px;
+  color: #666;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.rejister form .red {
+  color: red;
+}
+
+.rejister form .green {
+  color: green;
 }
 
 .rejister .ppp {
