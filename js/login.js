@@ -22,3 +22,9 @@ $('.bt').on('click', function () {
 		}
 	})
 })
+$('.un').on('input', function () {
+	$('.hint').html(null);
+})
+$('.pw').on('input', function () {
+	$('.hint').html(null);
+})
