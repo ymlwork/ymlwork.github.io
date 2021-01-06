@@ -134,3 +134,20 @@ $('.jd_span03').on('mouseenter', function () {
 	$('.jd_span02').removeClass('bianse').addClass('bubianse');
 	ajaxGet('hot');
 })
+
+//显示登录或退出状态
+function loginStatus() {
+	if (localStorage.getItem('status')) {
+		$('.loginstatus').html(`用户${localStorage.getItem('status')}`);
+		$('.tuichulogin').html(`退出登录`);
+
+	} else {
+		$('.loginstatus').html('登录');
+	}
+}
+loginStatus();
+$('.tuichulogin').click(function () {
+	localStorage.setItem('status', '');
+	location.href = './index.html';
+	$('.tuichulogin').html(`消息通知`);
+})
