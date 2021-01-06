@@ -89,10 +89,10 @@ th{
 	font-size: 14px;
 }
 .th01{
-	width: 160px;
+	width: 210px;
 }
 .th02{
-	width: 470px;
+	width: 420px;
 }
 .th03{
 	width: 198px;
@@ -103,14 +103,37 @@ th{
 .th05{
 	width: 120px;
 }
-.img{
-	width: 80px;
+.img img{
 	height: 80px;
 	display: block;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 }
 td{
 	font-size: 16px;
+	height: 120px;
+}
+td .add,td .cut{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+td .add:hover,td .cut:hover{
+	background: rgb(224,224,224);
+
+}
+td .xxnum{
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+}
+.del{
+	cursor: pointer;
 }
 .tijiao{
 	width: 100%;

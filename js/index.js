@@ -95,15 +95,15 @@ function splist() {
 splist()
 
 //用ajax请求数据渲染家电
-function ajaxGet(a) {
+async function ajaxGet(a) {
 	$('.jd_splist').html('');
-	$.ajax({
+	var data = await $.ajax({
 		url: '../json/jiadian_' + a + '.json',
 		dataType: 'json',
-		success: function (data) {
-			data.map(function (item, index) {
-				if (index == 7) {
-					$('.jd_splist').append(`<li class="li8 jd_lastli jd_li8">
+	})
+	data.map(function (item, index) {
+		if (index == 7) {
+			$('.jd_splist').append(`<li class="li8 jd_lastli jd_li8">
 							<div class="lastli_box1 yinying">
 								<p class="jd_p8">${item.p}</p><span class="jd_span18">${item.sp}</span><img src="${item.img}" alt="">
 							</div>
@@ -111,16 +111,18 @@ function ajaxGet(a) {
 								<p>浏览更多</p><span class="jd_span19">${item.span}</span><img src="../images/右箭头.png" alt="">
 							</div>
 						</li>`)
-				} else {
-					$('.jd_splist').append(`<li class="li${index + 1} yinying jd_li${index + 1}"><img src="${item.img}" alt="">
+		} else {
+			$('.jd_splist').append(`<li class="li${index + 1} yinying jd_li" data-id='${a}${index + 1}'><img src="${item.img}" alt="">
 							<h3 class="jd_h3${index + 1}">${item.h3}</h3>
 							<p class="jd_p1">${item.p}</p>
 							<div><span class="sp01 js_span04">${item.sp01}</span><span class="sp02 js_span05">${item.sp02}</span></div>
-							<a href="#"></a>
+							<a href="./details.html"></a>
 						</li>`)
-				}
-			})
 		}
+	})
+	//点击家电里面的li，把对应数据渲染到商品详情页
+	$('.jd_splist').children('.jd_li').on('click', function () {
+		localStorage.setItem('jsonName', $(this).data('id'));
 	})
 }
 ajaxGet('hot');
@@ -134,6 +136,9 @@ $('.jd_span03').on('mouseenter', function () {
 	$('.jd_span02').removeClass('bianse').addClass('bubianse');
 	ajaxGet('hot');
 })
+
+
+
 
 //显示登录或退出状态
 function loginStatus() {
@@ -151,3 +156,7 @@ $('.tuichulogin').click(function () {
 	location.href = './index.html';
 	$('.tuichulogin').html(`消息通知`);
 })
+
+//刷新购物车
+$('.gouwuche').html(`购物车(${JSON.parse(localStorage.getItem('cart')).length})`)
+
