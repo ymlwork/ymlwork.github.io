@@ -1,3 +1,6 @@
+body{
+	min-width: 1226px;
+}
 #header{
 	height: 100px;
 	background: #fff;
