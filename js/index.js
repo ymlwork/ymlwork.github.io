@@ -158,7 +158,7 @@ $('.tuichulogin').click(function () {
 })
 
 //刷新购物车
-if (!localStorage.getItem('cart')) {
+if (localStorage.getItem('cart')) {
 	$('.gouwuche').html(`购物车(${JSON.parse(localStorage.getItem('cart')).length})`)
 } else {
 	$('.gouwuche').html(`购物车0)`)
